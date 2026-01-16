@@ -132,3 +132,26 @@
 .paymentIcon:hover {
   color: #fff;
 }
+
+.qrContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.footerQrImage {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.scanText {
+  font-family: var(--font-body);
+  color: #999;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}

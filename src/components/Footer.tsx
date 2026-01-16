@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaInstagram, FaFacebook, FaTiktok, FaCcVisa, FaCcMastercard } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
@@ -35,6 +36,20 @@ export default function Footer() {
               <FaTiktok className={styles.socialIcon} />
               TikTok
             </a>
+          </div>
+        </div>
+
+        <div className={styles.column}>
+          <h3 className={styles.heading}>Menu</h3>
+          <div className={styles.qrContainer}>
+            <Image 
+              src="/menu-qr.png" 
+              alt="Menu QR Code" 
+              width={120} 
+              height={120} 
+              className={styles.footerQrImage} 
+            />
+            <span className={styles.scanText}>Scan for Menu</span>
           </div>
         </div>
 

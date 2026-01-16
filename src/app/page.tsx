@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ProductGrid from "@/components/ProductGrid";
 import Footer from "@/components/Footer";
+import FloatingMenuQR from "@/components/FloatingMenuQR";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <ProductGrid />
       </main>
       <Footer />
+      <FloatingMenuQR />
     </div>
   );
 }
