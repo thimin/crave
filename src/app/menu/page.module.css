@@ -1,0 +1,165 @@
+.page {
+  background-color: var(--color-brand-cream);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding: 120px 2rem 4rem;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+}
+
+.menuCard {
+  background-color: #fffcf8;
+  max-width: 800px;
+  width: 100%;
+  padding: 15px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  border: 1px solid #e0d0c0;
+}
+
+.borderInner {
+  border: 4px double var(--color-primary);
+  padding: 3rem 4rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  color: var(--color-primary);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #888;
+}
+
+.divider {
+  width: 100px;
+  height: 2px;
+  background-color: var(--color-primary);
+  margin: 1.5rem auto 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed #e0e0e0;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.itemHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.itemName {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  text-align: center;
+}
+
+.description {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: #444;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.detailLine {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.externalSection {
+  margin-top: 3rem;
+  text-align: center;
+  border-top: 2px solid var(--color-primary);
+  padding-top: 2rem;
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.externalList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.externalList li {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: #444;
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 768px) {
+  .borderInner {
+    padding: 2rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+  }
+}

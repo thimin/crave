@@ -1,0 +1,105 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1rem 0;
+  background: linear-gradient(to bottom, rgba(255,249,242,0.95), rgba(255,249,242,0.8));
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(86, 11, 24, 0.1);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+}
+
+.link {
+  font-family: var(--font-body);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.logoContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  object-fit: contain;
+  /* Logo is already circular and styled, just need to size it appropriately */
+  max-height: 100px;
+  width: auto;
+}
+
+.actions {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.iconBtn {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.iconBtn:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none; /* Hide nav on mobile for now */
+  }
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 0.7rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
