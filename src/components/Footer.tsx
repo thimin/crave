@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FaInstagram, FaFacebook, FaTiktok, FaCcVisa, FaCcMastercard } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaTiktok, FaCcVisa, FaCcMastercard, FaPhone, FaWhatsapp } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -17,7 +17,12 @@ export default function Footer() {
         <div className={styles.column}>
           <h3 className={styles.heading}>Company</h3>
           <Link href="/" className={styles.link}>About Us</Link>
-          <Link href="/" className={styles.link}>Contact</Link>
+          <a href="tel:+94711306681" className={styles.contactLink}>
+            <FaPhone /> +94 71 130 6681
+          </a>
+          <a href="https://wa.me/94711306681" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+            <FaWhatsapp /> +94 71 130 6681
+          </a>
           <Link href="/" className={styles.link}>FAQ</Link>
         </div>
 
