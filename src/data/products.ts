@@ -136,20 +136,20 @@ export const products: Product[] = [
   },
   {
     id: 13,
-    name: "Sour Symphony – Gummy Bouquet",
+    name: "Snack Bouquet with Dipping Sauce",
     description: "Popular snacks (Pringles, Lays, nuts etc.) + 3 tasty dipping sauces. Includes 40 snacks.",
-    image: "/images/snack-bouquet.jpeg",
+    image: "/images/snack-bouquet.png",
     variations: [
-      { name: "Mixed Snacks + 3 Dipping Sauces", price: 15300 },
+      { name: "Mixed Snacks + 3 Dipping Sauces", price: 22870 },
     ]
   },
   {
     id: 14,
     name: "Gummy Bouquet",
     description: "Large bouquet made with many colorful & sour gummy varieties.",
-    image: "/images/gummy-bouquet.jpeg",
+    image: "/images/gummy-bouquett.jpeg",
     variations: [
-      { name: "Mixed Gummy Varieties", price: 22170 },
+      { name: "Mixed Gummy Varieties", price: 15300 },
     ]
   },
   {
