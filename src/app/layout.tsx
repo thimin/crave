@@ -14,7 +14,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Crave | Taste the Art of Luxury",
+  title: "Achira | Taste the Art of Luxury",
   description: "Edible bouquet business offering luxury marshmallow, chocolate, and candy arrangements.",
   icons: {
     icon: "/favicon.ico",
